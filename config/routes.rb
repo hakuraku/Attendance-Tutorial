@@ -11,6 +11,7 @@ Rails.application.routes.draw do
     member do
       get 'edit_basic_info'
       patch 'update_basic_info'
-    end
+  end    
+  resources :attendances, only: :update # この行を追加します。  
   end
 end
